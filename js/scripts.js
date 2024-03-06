@@ -75,6 +75,14 @@ if (locationHash && $('.tabs_container').length) {
 }
 
 
+	// Показать контент 
+	$(".link-more").click(function (e) {
+		e.preventDefault();
+		$(".reviews_item").removeClass("hide");
+		$(".link-more").addClass("active");
+	});
+
+
 
 
 
