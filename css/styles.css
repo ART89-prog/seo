@@ -630,15 +630,22 @@ header {
 /* result */
 
 .result {
-}
-.cont {
-}
-.result_title {
+    padding: 32px 0;
+    border-radius: 16px;
+    background: rgb(25, 25, 22);
+    margin: 0 166px;
 }
 .title_white {
-
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 23px;
+    color: #fff;
 }
-.yellow {
+.title_white span.yellow {
+    color: rgb(255, 214, 0);
+    font-weight: 700;
 }
 .result_items {
     display: flex;
@@ -657,10 +664,15 @@ header {
 .result_item-img {
     border-radius: 16px;
     overflow: hidden;
+    position: relative;
+    height: 270px;
 }
 .result_item-img img {
+    display: block;
     width: 100%;
     height: 100%;
+    transition: all ease .3s;
+    object-fit: cover;
 }
 .result_item-top {
     position: absolute;
@@ -723,4 +735,267 @@ header {
 }
 .result_item-label + .result_item-label {
     margin-top: 6px;
+}
+
+
+
+/* stage */
+
+.stage {
+    padding: 48px 0 32px;
+}
+.title {
+    color: rgb(25, 25, 22);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: center;  
+    margin-bottom: 32px; 
+}
+.title b {
+    font-weight: 700;
+    position: relative;
+}
+.title b span {
+    position: relative;
+    z-index: 2;
+}
+.title b span:before {
+    transform: rotate(-2deg);
+    content: "";
+    z-index: -1;
+    width: 230px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90.00deg, rgba(255, 214, 0, 0) 0%,rgba(255, 214, 0, 0.48) 9.948%,rgba(255, 214, 0, 0) 90.432%);
+}
+.stage_wrap {
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.04);
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+.stage_wrap > * {
+    width: 50%;
+}
+.stage_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 65px;
+    row-gap: 50px;
+    position: relative;
+    padding: 48px 79px;
+    counter-reset: tidbit-counter;
+}
+.stage_items::before {
+    position: absolute;
+    content: "";
+    background: rgb(238, 238, 240);
+    width: 1px;
+    height: 100%;
+    top: 0px;
+    right: 0;   
+}
+.stage_item:before {
+    counter-increment: tidbit-counter;
+    content: counter(tidbit-counter);
+    color: rgb(25, 25, 22);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    border-radius: 12px;
+    background: rgb(255, 214, 0);
+    width: 41px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -15px;
+    left: -10px;
+    position: absolute;
+}
+.stage_items > * {
+    width: calc(100%/3 - 65px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.stage_item-icon {
+    margin: 0 auto;
+    display: block;
+}
+.stage_item-title {
+    margin-top: 8px;
+    color: rgb(25, 25, 22);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center; 
+    position: relative;
+}
+.stage_item-title:before {
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 1px;
+    background: #EAEAEA;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.stage_item.active .stage_item-title:before {
+    display: none;
+}
+.stage_item.active.stage_item:before {
+    opacity: 0;
+}
+.stage_item.active .stage_item-title {
+    color: #7e7e7e;
+}
+.stage_list {
+    padding: 48px 50px;
+    position: relative;
+}
+.stage_list-title {
+    color: rgb(25, 25, 22);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+.stage_list-text {
+    color: rgb(25, 25, 22);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 16px;
+}
+.stage_list ul {
+    list-style: none;
+}
+.stage_list ul li {
+    padding-left: 24px;
+    color: rgb(126, 126, 126);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;  
+    display: block;
+	margin: 7px 0;
+	background: url(../images/arrow.svg) 0 11px no-repeat;
+	background-size: 13px 12px;
+}
+.stage_list-number {
+    position: absolute;
+    top: 0;
+    right: 64px;
+    color: rgb(245, 245, 245);
+    font-size: 128px;
+    font-weight: 400;
+    line-height: 150%;   
+}
+
+
+.tabs_container .tabs {
+    margin-bottom: 17px;
+}
+.tabs_container .tabs button.active {
+    opacity: 1;
+}
+.tab_content.active {
+    visibility: visible;
+    overflow: visible;
+    height: auto;
+    transition: opacity .5s linear;
+    pointer-events: auto;
+    opacity: 1;
+    display: block;
+}
+.tab_content {
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+    display: none;
+}
+
+
+
+
+/* reviews */
+
+.reviews {
+    padding: 32px 0 32px;
+    background: #fff;
+}
+.reviews_items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.reviews_items > * {
+    width: calc(50% - 12px);
+}
+.reviews_item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-left: 36px;
+}
+.reviews_item-avatar {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+.reviews_item-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews_item-name {
+    color: rgb(25, 25, 22);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0 6px 0 12px;
+}
+.reviews_item-label {
+    padding: 2px 6px;
+    border-radius: 500px;
+    background: rgb(13, 128, 67); 
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: none;
+}
+.reviews_item-text {
+    padding: 24px 21px 16px 16px;
+    border-radius: 20px;
+    background: rgb(247, 247, 249);
+    color: rgb(25, 25, 22);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    position: relative;
+}
+.reviews_item-text:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 8px 8px;
+    border-color: transparent transparent rgb(247, 247, 249) transparent;
+    position: absolute;
+    content: "";
+    top: -8px;
+    left: 52px;
 }

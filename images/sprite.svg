@@ -50,6 +50,12 @@
         <path d="M7 9.16675C8.10457 9.16675 9 8.27132 9 7.16675C9 6.06218 8.10457 5.16675 7 5.16675C5.89543 5.16675 5 6.06218 5 7.16675C5 8.27132 5.89543 9.16675 7 9.16675Z" fill="white"/>
       </symbol>
 
+      <symbol width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path d="M2.74121 6H9.74121" stroke="#191916" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6.24121 2.5L9.74121 6L6.24121 9.5" stroke="#191916" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+
 
 
 
