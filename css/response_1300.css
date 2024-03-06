@@ -1,0 +1,28 @@
+@media print, (max-width: 1300px) {
+
+    :root {
+        --font_size_title: 42px;
+        --font_size: 18px;
+    }
+    
+    header .menu {
+        margin: 0px 0px 115px;
+    }
+    header {
+        background-position: center;
+    }
+    .gallery_title {
+        margin-bottom: 50px;
+    } 
+    .footer_right-title:before {
+        bottom: -115px;
+        right: -50px;
+    }
+    .footer_right-text {
+        max-width: 250px;
+    }
+    
+
+
+}
+
