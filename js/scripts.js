@@ -8,25 +8,6 @@ $(() => {
 	OVERLAY = document.querySelector('.overlay')
 
 
-	// Моб. меню
-	$('header .mob_menu_btn').click((e) => {
-		e.preventDefault()
-
-		$('header .mob_menu_btn').addClass('active')
-		$('body').addClass('menu_open')
-		$('header .menu').addClass('show')
-		$('.overlay').fadeIn(300)
-	})
-
-	$('header .close_btn, header .menu .item a, .overlay').click((e) => {
-		e.preventDefault()
-
-		$('header .mob_menu_btn').removeClass('active')
-		$('body').removeClass('menu_open')
-		$('header .menu').removeClass('show')
-		$('.overlay').fadeOut(300)
-	})
-
 
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
@@ -104,12 +85,47 @@ Fancybox.defaults.template = {
 	// main: null
 }
 
-// Показать контент 
-$(".link-more").click(function (e) {
-	e.preventDefault();
-	$(".vacancy_item").removeClass("hide");
-	$(".link-more").addClass("active");
-});
+
+const sertificatSliders = [],
+sertificat = document.querySelectorAll('.sertificat .swiper')
+
+sertificat.forEach(function (el, i) {
+el.classList.add('sertificat_s' + i)
+
+let options = {
+	loop: true,
+	speed: 500,
+	watchSlidesProgress: true,
+	slideActiveClass: 'active',
+	slideVisibleClass: 'visible',
+	preloadImages: false,
+	breakpoints: {
+		0: {
+			spaceBetween: 20,
+			slidesPerView: 1.12
+		},
+		768: {
+			spaceBetween: 0,
+			slidesPerView: 3
+		},
+		1024: {
+			spaceBetween: 0,
+			slidesPerView: 4
+		}
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev'
+	}
+}
+
+sertificatSliders.push(new Swiper('.sertificat_s' + i, options))
+})
 
 
 

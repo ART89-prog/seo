@@ -55,16 +55,16 @@
         <path d="M6.24121 2.5L9.74121 6L6.24121 9.5" stroke="#191916" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
 
+      <symbol width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg" id="prev">
+        <path d="M25 13H1M1 13L13 25M1 13L13 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg" id="next">
+        <path d="M1 13H25M25 13L13 25M25 13L13 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
 
 
 
-
-
-
-
-
-
-  
 
 
 
