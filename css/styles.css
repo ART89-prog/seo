@@ -952,6 +952,9 @@ header {
     height: 22px;
     margin-left: 8px;
 }
+.price_item-box form {
+    display: none;
+}
 
 
 
