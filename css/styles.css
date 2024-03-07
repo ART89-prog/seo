@@ -927,6 +927,33 @@ header {
 
 
 
+/* price */
+
+.price_item-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #191916;
+}
+.price_item:nth-child(1) .price_item-title .icon {
+    width: 24px;
+    height: 29px;
+    margin-left: 8px;
+}
+.price_item:nth-child(2) .price_item-title .icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+.price_item:nth-child(3) .price_item-title .icon {
+    width: 24px;
+    height: 22px;
+    margin-left: 8px;
+}
+
+
 
 /* reviews */
 
@@ -1172,4 +1199,38 @@ header {
 }
 .swiper-pagination-bullet-active {
     background: #FFD600;
+}
+
+
+
+
+footer {
+    padding: 32px;
+    border-radius: 12px;
+    background: #191916;
+    margin: 32px 32px;
+}
+.cont {
+}
+.footer_items {
+}
+.footer_item {
+}
+.footer_item-title {
+}
+.footer_item-phone {
+}
+.consult_btn {
+}
+.icon1 {
+}
+.icon2 {
+}
+.footer_item-mail {
+}
+.icon {
+}
+.footer_item-grafic {
+}
+.footer_item-text {
 }
