@@ -1421,10 +1421,13 @@ form .field input:-ms-input-placeholder {
     padding-left: 32px;
     cursor: pointer;
 }
+.quiz_form input[type=radio]:checked + label {
+    color: #888;
+}
 .quiz_form input[type=radio] + label:before {
     width: 16px;
     height: 16px;
-    border: 1px solid #FFD600;
+    border: 2px solid #FFD600;
     border-radius: 50%;
     content: "";
     position: absolute;
@@ -1433,12 +1436,12 @@ form .field input:-ms-input-placeholder {
     background: #fff;
 }
 .quiz_form input[type=radio]:checked + label:after {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     content: "";
     position: absolute;
-    left: 3px;
-    top: 6px;
+    left: 4px;
+    top: 7px;
     border-radius: 50%;
     background: #FFD600; 
 }
