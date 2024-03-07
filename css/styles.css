@@ -1145,3 +1145,31 @@ header {
     align-items: center;
     justify-content: center;
 }
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -36px;    
+}
+.swiper-pagination-bullet {
+    display: block;
+    width: 12px;
+    height: 12px;
+    transition: .2s linear;
+    pointer-events: auto;
+    opacity: 1;
+    border-radius: 50%;
+    background: #E5E5E8;
+}
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0;
+}
+.swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 16px !important;
+}
+.swiper-pagination-bullet-active {
+    background: #FFD600;
+}
