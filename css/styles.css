@@ -1342,8 +1342,6 @@ header {
 .quiz {
     padding: 48px 0 32px;
 }
-.cont {
-}
 .quiz_title strong {
     font-weight: 400;
     position: relative;
@@ -1358,22 +1356,91 @@ header {
     left: 0;
     top: 32px;
 }
-.title {
-}
-.quiz_wrapper {
-}
 .progress-bar {
     width: 100%;
     background-color: #EDEDF0;
     border-radius: 50px;
+    position: relative;
+    margin-bottom: 34px;
 }
 .progress-bar-fill {
     display: block;
     height: 24px;
     transition: width 500ms ease-in-out;
     border-radius: 400px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     background: rgb(255, 214, 0);
+}
+.progress-bar-text {
+    color: rgb(87, 77, 24);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;   
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+.quiz_form-title {
+    color: rgb(25, 25, 22);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.quiz_form input[type=radio] {
+    display: none;
+}
+.quiz_form .line {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-bottom: -16px;
+}
+.quiz_form .line > * {
+    width: calc(100%/3 - 24px);
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+.quiz_form .field {   
+    padding: 21px 12px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.04);
+    background: rgb(255, 255, 255);
+}
+.quiz_form .field label {
+    color: rgb(25, 25, 22);
+    font-family: "Inter Tight";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    display: inline-block;
+    font-family: inherit;
+    position: relative;
+    padding-left: 32px;
+    cursor: pointer;
+}
+.quiz_form input[type=radio] + label:before {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FFD600;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    background: #fff;
+}
+.quiz_form input[type=radio]:checked + label:after {
+    width: 10px;
+    height: 10px;
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    border-radius: 50%;
+    background: #FFD600; 
 }
 
 
