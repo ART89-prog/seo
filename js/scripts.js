@@ -75,6 +75,7 @@ if (locationHash && $('.tabs_container').length) {
 
 
 
+
 // Fancybox
 Fancybox.defaults.autoFocus = false
 Fancybox.defaults.trapFocus = false
@@ -148,169 +149,9 @@ $('select').on('change', function () {
 
 
 
-const gallerySliders = [],
-	gallery = document.querySelectorAll('.gallery .swiper')
-
-gallery.forEach(function (el, i) {
-	el.classList.add('gallery_s' + i)
-
-	let options = {
-		loop: true,
-		speed: 500,
-		watchSlidesProgress: true,
-		slideActiveClass: 'active',
-		slideVisibleClass: 'visible',
-		preloadImages: false,
-		lazy: true,
-		breakpoints: {
-			0: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			},
-			768: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			}
-		},
-		pagination: {
-			el: '.gallery .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.gallery .swiper-button-next',
-			prevEl: '.gallery .swiper-button-prev'
-		}
-	}
-
-	gallerySliders.push(new Swiper('.gallery_s' + i, options))
-})
-
-
-const modalSliders = [],
-	modal = document.querySelectorAll('.modal .swiper')
-
-modal.forEach(function (el, i) {
-	el.classList.add('modal_s' + i)
-
-	let options = {
-		loop: true,
-		speed: 500,
-		watchSlidesProgress: true,
-		slideActiveClass: 'active',
-		slideVisibleClass: 'visible',
-		preloadImages: false,
-		lazy: true,
-		breakpoints: {
-			0: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			},
-			768: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			}
-		},
-		pagination: {
-			el: '.modal .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.modal .swiper-button-next',
-			prevEl: '.modal .swiper-button-prev'
-		}
-	}
-
-	modalSliders.push(new Swiper('.modal_s' + i, options))
-})
-
-
-const candidateSliders = [],
-	candidate = document.querySelectorAll('.candidate .swiper')
-
-candidate.forEach(function (el, i) {
-	el.classList.add('candidate_s' + i)
-
-	let options = {
-		loop: true,
-		speed: 500,
-		watchSlidesProgress: true,
-		slideActiveClass: 'active',
-		slideVisibleClass: 'visible',
-		preloadImages: false,
-		lazy: true,
-		breakpoints: {
-			0: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			},
-			479: {
-				spaceBetween: 17,
-				slidesPerView: 2
-			},
-			768: {
-				spaceBetween: 17,
-				slidesPerView: 3
-			}
-		},
-		pagination: {
-			el: '.candidate .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.candidate .swiper-button-next',
-			prevEl: '.candidate .swiper-button-prev'
-		}
-	}
-
-	candidateSliders.push(new Swiper('.candidate_s' + i, options))
-})
 
 
 
-const clientSliders = [],
-	client = document.querySelectorAll('.client .swiper')
-
-client.forEach(function (el, i) {
-	el.classList.add('client_s' + i)
-
-	let options = {
-		loop: true,
-		speed: 500,
-		watchSlidesProgress: true,
-		slideActiveClass: 'active',
-		slideVisibleClass: 'visible',
-		preloadImages: false,
-		lazy: true,
-		breakpoints: {
-			0: {
-				spaceBetween: 0,
-				slidesPerView: 1
-			},
-			479: {
-				spaceBetween: 17,
-				slidesPerView: 2
-			},
-			768: {
-				spaceBetween: 17,
-				slidesPerView: 3
-			}
-		},
-		pagination: {
-			el: '.client .swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		navigation: {
-			nextEl: '.client .swiper-button-next',
-			prevEl: '.client .swiper-button-prev'
-		}
-	}
-
-	clientSliders.push(new Swiper('.client_s' + i, options))
-})
 
 
 
