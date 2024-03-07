@@ -958,6 +958,83 @@ header {
 
 
 
+/* callback */
+
+.callback {
+    padding: 32px 32px 48px;
+    background: #191916;
+    border-radius: 12px;
+    margin: 0 166px;
+}
+.cont {
+}
+.callback_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.callback_title img {
+    margin-left: 16px;
+}
+.title_white {
+}
+.callback_wrap {
+    display: flex;
+    gap: 24px;
+}
+.callback_left {
+    width: 50%;
+}
+.callback_box {
+    display: flex;
+    gap: 24px;
+}
+.callback_avatar {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+.callback_avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.callback_info {
+}
+.callback_messages {
+    background: #fff;
+    padding: 14px 19px;
+    border-radius: 16px;
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.callback_messages:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background: url(../images/message.png);
+    left: -7px;
+    bottom: 0;
+}
+.callback_label {
+}
+.callback_right {
+    width: 50%;
+}
+.callback_phone {
+}
+.consult_btn {
+}
+.icon1 {
+}
+.icon2 {
+}
+
+
 /* reviews */
 
 .reviews {

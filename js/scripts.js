@@ -67,8 +67,8 @@ if (locationHash && $('.tabs_container').length) {
 
 	$('.price_item-btn').click(function(e) {
 		e.preventDefault();
-		$('.price_item-text').css( "display", "none");
-		$('.price_item-box form').css( "display", "block");
+		$(this).prev().prev().css( "display", "none");
+		$(this).prev().css( "display", "block");
 	 });
 
 
