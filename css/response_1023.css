@@ -13,7 +13,8 @@
         width: 100% !important;
     }
     .title {
-        line-height: 42px;
+        line-height: 1.4;
+        margin-bottom: 16px;
     }
     .title b span:before {
         width: 176px;
@@ -52,8 +53,11 @@
         margin-bottom: 12px;
     }
     .reviews_item-top {
-        margin-bottom: 9px;
+        margin-bottom: 11px;
         margin-left: 0;
+    }
+    .reviews_item-text:before {
+        left: 18px;
     }
     .reviews_item-name {
         font-size: 16px;
@@ -72,9 +76,10 @@
     }
     .about_list li {
         font-size: 16px;
+        line-height: 1.5;
     }
     .footer_item-title {
-        font-size: 20x;
+        font-size: 20px;
     }
     .footer_item ul li b {
         font-size: 16px;
@@ -94,6 +99,22 @@
     }
     .consult_btn {
         gap: 6px;
+    }
+    .title_white {
+        line-height: 1.2;
+    }
+    .footer_bottom-title {
+        font-size: 20px;
+    }
+    .block {
+        padding: 24px 0 24px;
+    }
+    .footer_bottom {
+        padding: 24px 0px 0px;
+    }
+    .cont {
+        max-width: 744px;
+        padding: 0 12px;
     }
 
 

@@ -90,7 +90,10 @@
         <path d="M62 38V62M62 86H62.0595M122 62C122 95.1371 95.1371 122 62 122C28.8629 122 2 95.1371 2 62C2 28.8629 28.8629 2 62 2C95.1371 2 122 28.8629 122 62Z" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
 
-
+      
+      <svg viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow3">
+        <path d="M13 7.12939L7 1.15395L1 7.12939" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
 
 
 

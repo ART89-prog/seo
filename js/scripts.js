@@ -77,6 +77,53 @@ $(() => {
 		$(this).prev().css("display", "block");
 	});
 
+	if ($(window).width() < 768) {
+		$('.footer_item-title-js').click(function (e) {
+			e.preventDefault();
+			$(this).next().slideToggle();
+			$(this).toggleClass("active");
+		});
+	}
+
+
+
+	$(document).ready(function () {
+		$('.table-responsive-stack').find("th").each(function (i) {
+
+			$('.table-responsive-stack td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">' + $(this).text() + ':</span> ');
+			$('.table-responsive-stack-thead').hide();
+		});
+
+		$('.table-responsive-stack').each(function () {
+			var thCount = $(this).find("th").length;
+			var rowGrow = 100 / thCount + '%';
+			//console.log(rowGrow);
+			$(this).find("th, td").css('flex-basis', rowGrow);
+		});
+
+		function flexTable() {
+			if ($(window).width() < 768) {
+
+				$(".table-responsive-stack").each(function (i) {
+					$(this).find(".table-responsive-stack-thead").show();
+					$(this).find('thead').hide();
+				});
+
+			} else {
+				$(".table-responsive-stack").each(function (i) {
+					$(this).find(".table-responsive-stack-thead").hide();
+					$(this).find('thead').show();
+				});
+			}
+		}
+		flexTable();
+
+		window.onresize = function (event) {
+			flexTable();
+		};
+	});
+
+
 
 
 	// Fancybox
@@ -115,9 +162,13 @@ $(() => {
 					spaceBetween: 12,
 					slidesPerView: 1.12
 				},
+				510: {
+					spaceBetween: 12,
+					slidesPerView: 2.1
+				},
 				768: {
 					spaceBetween: 12,
-					slidesPerView: 3
+					slidesPerView: 2
 				},
 				1024: {
 					spaceBetween: 24,

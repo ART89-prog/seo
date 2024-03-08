@@ -1,5 +1,32 @@
 @media (max-width: 479px) {
 
+    :root {
+        --font_size_title: 20px;
+        --font_size: 16px;
+    }
+    .header_phone {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .header_time {
+        font-size: 14px;
+    }
+    .result_item-title {
+        font-size: 18px;
+    }
+    .result_item-adress {
+        font-size: 14px;
+    }
+    .result_item-bottom {
+        bottom: 12px;
+        left: 12px;
+    }
+    .result_item-top {
+        top: 12px;
+        left: 12px
+    }
+
+
 
 
 
