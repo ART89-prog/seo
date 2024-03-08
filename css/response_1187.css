@@ -57,6 +57,39 @@
         flex-direction: row;
         width: calc(50% - 12px);
     }
+    .footer_item:nth-child(1),
+    .footer_item:nth-child(2)  {
+        width: calc(100%/2 - 24px);
+    }
+    .footer_item:nth-child(3) {
+        width: 100%;
+        position: relative;
+        padding-top: 24px;
+    }
+    .footer_item-wrapper {
+        column-count: 2;
+        column-gap: 60px;
+    }
+    .footer_item-contact {
+        text-align: center;
+    }
+    .footer_item-mail {
+        justify-content: center;
+    }
+    .footer_wrap {
+        padding: 32px 0;
+    }
+    .footer_item:nth-child(3):before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 40px);
+        height: 1px;
+        left: -20px;
+        top: 0;
+        background: rgba(255, 255, 255, 1); 
+    }
+   
+
 
 
 

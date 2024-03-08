@@ -5,6 +5,96 @@
         margin-left: 12px;
         margin-bottom: 12px;
     }
+    .result_items {
+        margin-left: -12px;
+        margin-bottom: -12px;
+    }
+    .link-more {
+        width: 100% !important;
+    }
+    .title {
+        line-height: 42px;
+    }
+    .title b span:before {
+        width: 176px;
+        height: 35px;
+    }
+    .callback_label {
+        display: none;
+    }
+    .callback_label-mob {
+        display: block;
+        font-size: 16px;
+        line-height: 2;
+        font-weight: 400;
+        color: #7E7E7E;
+        text-align: center;
+    }
+    .callback_left {
+        width: 100%;
+    }
+    .callback_wrap {
+        flex-direction: column;
+    }
+    .callback_box {
+        align-items: flex-end;
+    }
+    .callback_right {
+        width: 100%;
+    }
+    .quiz_form .line {
+        margin-left: -12px;
+        margin-bottom: -12px;
+    }
+    .quiz_form .line > * {
+        width: calc(100% / 2 - 12px);
+        margin-left: 12px;
+        margin-bottom: 12px;
+    }
+    .reviews_item-top {
+        margin-bottom: 9px;
+        margin-left: 0;
+    }
+    .reviews_item-name {
+        font-size: 16px;
+    }
+    .about_wrap {
+        flex-direction: column-reverse;
+        gap: 41px;
+    }
+    .about_img {
+        width: 100%;
+        height: auto;
+    }
+    .about_list {
+        width: 100%;
+        column-count: 2;
+    }
+    .about_list li {
+        font-size: 16px;
+    }
+    .footer_item-title {
+        font-size: 20x;
+    }
+    .footer_item ul li b {
+        font-size: 16px;
+    }
+    .footer_item-phone {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    .footer_item-mail {
+        font-size: 20px;
+    }
+    .footer_item-text {
+        font-size: 14px;
+    }
+    footer .consult_btn {
+        margin-bottom: 0px;
+    }
+    .consult_btn {
+        gap: 6px;
+    }
 
 
 
