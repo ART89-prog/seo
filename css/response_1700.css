@@ -1,0 +1,19 @@
+@media print, (max-width: 1700px) {
+
+    .first-section,
+    .result,
+    .callback {
+        margin: 0 20px;
+    }
+    .swiper-button-prev {
+        left: 0px;
+    }
+    .swiper-button-next {
+        right: 0px;
+    }
+    
+
+
+
+}
+

@@ -110,7 +110,6 @@ $(() => {
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
 			slideVisibleClass: 'visible',
-			preloadImages: false,
 			breakpoints: {
 				0: {
 					spaceBetween: 12,
@@ -121,6 +120,10 @@ $(() => {
 					slidesPerView: 3
 				},
 				1024: {
+					spaceBetween: 24,
+					slidesPerView: 3
+				},
+				1300: {
 					spaceBetween: 24,
 					slidesPerView: 4
 				}

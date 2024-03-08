@@ -322,7 +322,7 @@
     display: none
 }
 
-/* .swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-next:after, .swiper-button-prev:after {
     font-family: swiper-icons;
     font-size: var(--swiper-navigation-size);
     text-transform: none !important;
@@ -342,7 +342,7 @@
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
     content: 'next'
-} */
+}
 
 .swiper-pagination {
     position: absolute;

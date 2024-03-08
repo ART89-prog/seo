@@ -1553,6 +1553,9 @@ form .field input:-ms-input-placeholder {
     margin: 76px auto 0;
     display: block;
 }
+.quiz_wrap {
+    margin-bottom: 20px;
+}
 
 
 
@@ -1791,6 +1794,17 @@ form .field input:-ms-input-placeholder {
     opacity: 0;
     align-items: center;
     justify-content: center;
+}
+.swiper-slide img {
+    width: 100%;
+}
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after {
+    display: none;
+}
+.swiper-button-prev:after, 
+.swiper-rtl .swiper-button-next:after {
+    display: none;
 }
 .swiper-horizontal>.swiper-pagination-bullets, 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
