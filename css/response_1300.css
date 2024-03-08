@@ -12,9 +12,39 @@
     }
 
     .header_left {
-        max-width: 520px;
+        max-width: 528px ;
     }
-    
+    .cont {
+        max-width: 1156px;
+    }
+    .header_phone {
+        font-size: 24px;
+    }
+    .first-section {
+        background-position: 130% center;
+    }
+    .first-section_text br {
+        display: block;
+    }
+    .consult {
+        max-width: 545px;
+    }
+    .consult_text {
+        text-align:  start;
+        max-width: 335px;
+        margin: 0 auto 22px;
+    }
+    .callback_wrap {
+        padding: 0;
+    }
+    .callback {
+        padding: 17px 0 28px;
+    }
+    .about_img {
+        width: 546px;
+        height: 509px;
+    }
+
 
 
 

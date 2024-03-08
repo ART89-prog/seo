@@ -477,6 +477,31 @@ header {
     display: flex;
     align-items: center;
 }
+.first-section_text br {
+    display: none;
+}
+.first-section_text span {
+    position: relative;
+    margin-right: 45px;
+}
+.first-section_text span:nth-child(1):after {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 38px;
+    top: 7px;
+    right: -42px;
+    background: url(../images/order.svg);
+}
+.first-section_text span:nth-child(2):after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 38px;
+    top: 7px;
+    right: -40px;
+    background: url(../images/rouble.svg);
+}
 .first-section_text .icon1 {
     width: 38px;
     height: 38px;
@@ -767,6 +792,8 @@ header {
     gap: 10px;
     border-radius: 400px;
     width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
 }
 .result_item-label span {
     font-family: "Inter Tight";
@@ -1868,7 +1895,7 @@ form .field input:-ms-input-placeholder {
     padding: 32px 32px;
     border-radius: 12px;
     background: var(--text_color);
-    margin: 32px 32px;
+    margin: 32px 32px 0;
 }
 .footer_items {
     display: flex;
@@ -1952,6 +1979,7 @@ form .field input:-ms-input-placeholder {
     line-height: 200%;
     text-decoration: none;
     margin-bottom: 20px;
+    white-space: nowrap;
 }
 .footer_item-mail .icon {
     width: 23px;
@@ -1959,7 +1987,7 @@ form .field input:-ms-input-placeholder {
     flex-shrink: 0;
 }
 .footer_item-mail span {
-    border-bottom: 1px solid rgba(255, 214, 0, 0.12);
+    border-bottom: 1px solid rgba(255, 214, 0, 0.12);    
 }
 footer .consult_btn {
     margin-bottom: 24px;
