@@ -359,6 +359,7 @@ header {
     text-align: end;
 }
 .header_phone {
+    white-space: nowrap;
     text-decoration: none;
     font-size: 32px;
     font-weight: 700;
@@ -635,6 +636,7 @@ header {
 .advantages_items {
     display: flex;
     align-items: stretch;
+    flex-wrap: wrap;
     gap: 24px;
 }
 .advantages_items > * {
@@ -646,6 +648,7 @@ header {
     background: #fff;
     border-radius: 16px;
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.04);    
+    gap: 16px;
 }
 .advantages_item-icon {
     width: 90px;
@@ -657,6 +660,7 @@ header {
     justify-content: center;
     background: #fff;
     transition: all ease .3s;
+    flex-shrink: 0;
 }
 .advantages_item:hover .advantages_item-icon {
     background: #FFD600;
@@ -679,7 +683,6 @@ header {
 }
 .advantages_item-title {
     text-align: center;
-    margin-top: 16px;
     color: var(--text_color);
     font-size: 18px;
     font-weight: 400;

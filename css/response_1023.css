@@ -1,9 +1,12 @@
 @media print, (max-width: 1023px) {
  
-    :root {
-        --font_size_title: 32px;
-        --font_size: 18px;
+    .result_items > * {
+        width: calc(100% / 2 - 12px);
+        margin-left: 12px;
+        margin-bottom: 12px;
     }
+
+
 
 
 

@@ -1,6 +1,62 @@
 @media print, (max-width: 1187px) {
 
-
+    :root {
+        --font_size_title: 36px;
+    }
+    .header_rating {
+        display: none;
+    }
+    .first-section_title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .first-section_title b:before {
+        width: 298px;
+        height: 60px;
+        left: 15px;
+    }
+    .consult {
+        max-width: 100%;
+    }
+    .consult_text {
+        max-width: 100%;
+        margin: 0 auto 16px;
+    }
+    .consult_text span {
+        font-size: 48px;
+    }
+    .first-section {
+        padding: 32px 0 16px;
+    }
+    .advantages_item-icon {
+        width: 72px;
+        height: 72px;
+    }
+    .advantages_item-icon .icon1 {
+        width: 32px;
+        height: 38px;
+    }
+    .advantages_item-icon .icon2 {
+        width: 36px;
+        height: 38px;
+    }
+    .advantages_item-icon .icon3 {
+        width: 36px;
+        height: 38px;
+    }
+    .advantages_item-icon .icon4 {
+        width: 36px;
+        height: 38px;
+    }
+    .advantages_items {
+        gap: 12px;
+    }
+    .advantages_items > * {
+        padding: 14px;
+        gap: 20px;
+        flex-direction: row;
+        width: calc(50% - 12px);
+    }
 
 
 
