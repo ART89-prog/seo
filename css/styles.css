@@ -2252,3 +2252,29 @@ tbody tr:last-child td:nth-child(2) {
 .traffic_title {
     margin-bottom: 24px;
 }
+
+
+/* indicators */
+
+.indicators {
+}
+.cont {
+}
+.indicators_wrap {
+    background: linear-gradient(360deg, #FFD600 33.74%, rgba(255, 214, 0, 0.21) 98.01%);
+    border-radius: 16px;
+    padding: 32px 148px 42px 114px;
+}
+.indicators_items {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.indicators_item {
+}
+.indicators_item-title {
+}
+.indicators_item-info {
+}
+.indicators_item-text {
+}
