@@ -122,6 +122,34 @@
         font-size: 24px;
         text-align: center;
     }
+    .promotion_title {
+        font-size: 48px;
+        max-width: 523px;
+        margin-bottom: 12px;
+    }
+    .promotion_item {
+        font-size: 18px;
+    }
+    .promotion_items {
+        max-width: 559px;
+    }
+    .promotion {
+        padding: 32px 0 230px;
+        background-position: 70% -45%;
+        background-size: cover;
+        margin: 0 12px;
+    }
+    thead tr,
+    table {
+        font-size: 16px;
+    } 
+    .indicators_item-text {
+        font-size: 24px;
+    }
+    .indicators_item:first-child .indicators_item-text {
+        margin-top: 48px;
+    }
+
 
 
 

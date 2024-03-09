@@ -5,7 +5,7 @@
         --font_size: 18px;
     }
     .footer_wrap {
-        margin: 32px 12px 0;
+        margin: 0px 12px 0;
     }
     .header_phone {
         font-size: 20px;
@@ -172,6 +172,43 @@
     }
     .indicators_wrap {
         padding: 24px;
+    }
+    .promotion_title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .promotion {
+        padding: 24px 0 130px;
+    }
+    .promotion .cont {
+        padding: 0 42px;
+    }
+    .promotion_item {
+        display: inline-block;
+        font-size: 16px;
+    }
+    .promotion_items {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .promotion_item + .promotion_item {
+        margin-top: 6px;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .diagrama_img {
+        width: 100%;
+        height: auto;
+    }
+    .diagrama_list {
+        columns: 1;
+        margin: 0 30px;
+    }
+    .diagrama_list li + li {
+        margin-top: 20px;
     }
 
 

@@ -1,7 +1,7 @@
 @media (max-width: 479px) {
 
     :root {
-        --font_size_title: 20px;
+        --font_size_title: 24px;
         --font_size: 16px;
     }
     .header_phone {
@@ -30,6 +30,22 @@
     }
     .indicators_item-text {
         font-size: 16px;
+    }
+    .promotion_title {
+        font-size: 30px;
+    }
+    .promotion .cont {
+        padding: 0 20px;
+    }
+    .text {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    .diagrama_list {
+        margin: 0;
+    }
+    .indicators_wrap {
+        padding: 24px 35px;
     }
 
 

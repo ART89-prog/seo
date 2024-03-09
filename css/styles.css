@@ -855,6 +855,7 @@ header {
 .title b span {
     position: relative;
     z-index: 2;
+    display: inline-block;
 }
 .title b span:before {
     transform: rotate(-2deg);
@@ -2046,7 +2047,7 @@ footer .consult_btn {
 .promotion {
     margin: 0 20px;
     padding: 64px 0 210px;
-    background: url(../images/promotion_bg.jpg);
+    background: url(../images/promotion_bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 16px;
@@ -2063,12 +2064,12 @@ footer .consult_btn {
     margin-bottom: 24px;
 }
 .text {
-    margin-bottom: 32px;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 32px;
     line-height: 1.5;
     text-align: center;
     color: #7E7E7E;    
+    margin: 0 auto 32px;
 }
 .text span {
     color: var(--text_color);
@@ -2114,15 +2115,35 @@ footer .consult_btn {
 .request {
     padding: 32px 0;
 }
+.traffic_text {
+    max-width: 1200px;    
+}
 .table {
     width: 100%;
-    border-spacing: 0 10px;
     border-collapse: collapse;
     text-align: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
     background: #fff;
     overflow: hidden;
+}
+thead tr th:nth-child(1) {
+    flex-basis: 50%;
+}
+tbody tr td:nth-child(1) {
+    flex-basis: 50%;
+}
+thead tr th:nth-child(2) {
+    flex-basis: 25%;
+}
+tbody tr td:nth-child(2) {
+    flex-basis: 25%;
+}
+thead tr th:nth-child(3) {
+    flex-basis: 25%;
+}
+tbody tr td:nth-child(3) {
+    flex-basis: 25%;
 }
 .table-responsive-stack tr {
     display: -webkit-box;
@@ -2193,13 +2214,17 @@ tbody tr:last-child td:nth-child(2) {
     bottom: 0;
     background: #E5E5E8;
 }
+.diagrama_title {
+    margin-bottom: 70px;
+}
 .diagrama_wrap {
     display: flex;
-    gap: 20px;
+    gap: 120px;
+    margin-left: 100px;
 }
 .diagrama_img {
-    width: 746px;
-    height: 594px;
+    width: 548px;
+    height: 548px;
 }
 .diagrama_img img {
     width: 100%;

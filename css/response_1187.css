@@ -91,6 +91,28 @@
     .advantages_item-title {
         text-align: start;
     }
+    .text {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .diagrama_wrap {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 32px;
+    }
+    .diagrama_title {
+        margin-bottom: 32px;
+    }
+    .diagrama_img {
+        margin: 0 auto;
+    }
+    .diagrama_list {
+        columns: 2;
+    }
+    .traffic, 
+    .request {
+        padding: 24px 0;
+    }
    
 
 
