@@ -1373,8 +1373,13 @@ form .field input:-ms-input-placeholder {
     align-items: center;
     justify-content: center;
 }
+.callback_title br {
+    display: none;
+}
 .callback_title img {
     margin-left: 16px;
+    width: 99px;
+    height: 87px;
 }
 
 .callback_wrap {
@@ -1497,7 +1502,7 @@ form .field input:-ms-input-placeholder {
     color: var(--text_color);
     font-size: 32px;
     font-weight: 600;
-    line-height: 39px;
+    line-height: 1.2;
     margin-bottom: 30px;
     text-align: center;
 }

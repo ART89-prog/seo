@@ -265,6 +265,19 @@
     .quiz_form .field {
         padding: 13px 10px;
     }
+    .callback_title {
+        max-width: 300px;
+        justify-content: center;
+        margin: 0 auto 9px;
+    }
+    .callback_title br {
+        display: block;
+    }
+    .callback_phone {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
 
 
   
