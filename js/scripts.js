@@ -131,9 +131,9 @@ $(() => {
 
 	$('.content_toggle').click(function (e) {
 		e.preventDefault();
-		$(this).css("display", "none");	
-		$(this).prev().removeClass('hide');			
-	});				
+		$(this).css("display", "none");
+		$(this).prev().removeClass('hide');
+	});
 
 
 
@@ -203,6 +203,111 @@ $(() => {
 		}
 
 		sertificatSliders.push(new Swiper('.sertificat_s' + i, options))
+	})
+
+
+
+	const priceSliders = [],
+	price = document.querySelectorAll('.price .swiper')
+
+	price.forEach(function (el, i) {
+		el.classList.add('price_s' + i)
+
+		let options = {
+			loop: true,
+			speed: 500,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '">' + (index + 1) + '</span>';
+			  },
+			
+			slideVisibleClass: 'visible',
+			// pagination: '.pag-shoes',
+			// paginationClickable: true,
+			breakpoints: {
+				0: {
+					spaceBetween: 12,
+					slidesPerView: 1.12
+				},
+				510: {
+					spaceBetween: 12,
+					slidesPerView: 2.1
+				},
+				768: {
+					spaceBetween: 12,
+					slidesPerView: 2
+				},
+				1024: {
+					spaceBetween: 24,
+					slidesPerView: 2
+				},
+				1300: {
+					spaceBetween: 24,
+					slidesPerView: 3
+				}
+			},
+
+			// pagination: {
+			// 	el: '.swiper-pagination2',
+			// 	clickable: true,
+			// 	type : 'custom',
+			// 	bulletClass:'swiper_pagination_img'
+			//   },
+
+			pagination: {
+				el: '.swiper-pagination2',
+				type: 'bullets',
+				clickable: true,
+				bulletClass: 'swiper-pagination-bullet3',
+				bulletActiveClass: 'swiper-pagination-bullet-active3',
+				renderBullet: function (index, className) {
+				  return '<span class="' + className + '"></span>';
+				},
+				// Set the variable based on the number of bullets
+				on: {
+				  init: function () {
+					document.documentElement.style.setProperty(
+					  '--swiper-pagination-bullet-count3',
+					  this.pagination.bullets.length
+					);
+				  },
+				},
+			  },
+			
+
+
+			// pagination: {
+			// 	el: '.swiper-pagination2',
+			// 	type: 'bullets',
+			// 	clickable: true,
+			// },
+			
+			// paginationType: "custom",
+			// paginationCustomRender: function(swiper, current, total) {
+			//   var names = [];
+			//   $(".swiper-wrapper .swiper-slide").each(function(i) {
+			// 	names.push($(this).data("name"));
+			//   });
+			//   var text = "<span style='background-color:black;padding:20px;'>";
+			//   for (let i = 1; i <= total; i++) {
+			// 	if (current == i) {
+			// 	  text += "<span style='border-top:1px solid green;margin-right:4px;color:green;padding:10px;'>" + names[i] + "</span>";
+			// 	} else {
+			// 	  text += "<span style='border-top:1px solid white;margin-right:4px;color:white;padding:10px;'>" + names[i] + "</span>";
+			// 	}
+		  
+			//   }
+			//   text += "</span>";
+			//   return text;
+			// },
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		}
+
+		priceSliders.push(new Swiper('.price_s' + i, options))
 	})
 
 
