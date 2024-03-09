@@ -280,6 +280,19 @@ button {
 header {
     padding: 18px 0 19px;
 }
+.header_fixed {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 14px 15px 0px rgba(34, 60, 80, 0.25);
+    -moz-box-shadow: 0px 14px 15px 0px rgba(34, 60, 80, 0.25);
+    box-shadow: 0px 14px 15px 0px rgba(34, 60, 80, 0.25);
+  }
 .header_wrap {
     display: flex;
     align-items: center;
@@ -1257,6 +1270,10 @@ header {
 .price_item-box form .field input:focus {
     border: 1px solid #FFD600;
 }
+.price_item-box form .field input:focus + .input_icon {
+    fill: #FFD600;
+    transition: all ease .3s;
+}
 form .field input::-webkit-input-placeholder {
     font-family: var(--font_family);
     font-weight: 400;
@@ -1404,7 +1421,8 @@ form .field input:-ms-input-placeholder {
     height: 24px;
     transition: width 500ms ease-in-out;
     border-radius: 400px;
-    background: rgb(255, 214, 0);
+    /* background: rgb(255, 214, 0); */
+    background: url(../images/line.png);
 }
 .progress-bar-text {
     color: rgb(87, 77, 24);
@@ -1488,15 +1506,6 @@ form .field input:-ms-input-placeholder {
     align-items: center;
     position: relative;
 }
-.quiz form .quiz_phone .icon {
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    left: 17px;
-    top: 50%;
-    transform: translateY(-50%);
-    fill: #7e7e7e;
-}
 .quiz form .quiz_phone input {
     padding: 21px 21px 21px 47px;
     background:#EDEDF0;
@@ -1507,9 +1516,24 @@ form .field input:-ms-input-placeholder {
     color: var(--text_color);
     border-radius: 12px;
     border: 1px solid transparent;
+    position: relative;
+    display: block;
 }
 .quiz form .quiz_phone input:focus {
     border: 1px solid #FFD600;
+}
+.input_icon {
+    width: 15px;
+    height: 14px;
+    fill: #7E7E7E;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.quiz form .quiz_phone input:focus + .input_icon {
+    fill: #FFD600;
+    transition: all ease .3s;
 }
 .quiz_btns {
     display: flex;
@@ -1735,9 +1759,11 @@ form .field input:-ms-input-placeholder {
     line-height: 27px;  
     display: flex;
     align-items: center;
+    gap: 16px;
 }
 .about_list li img {
-    margin-right: 16px;
+    width: 32px;
+    height: 32px;
 }
 .about_list li + li {
     margin-top: 16px;
@@ -1941,6 +1967,10 @@ form .field input:-ms-input-placeholder {
 }
 .footer_item ul li a {
     text-decoration: none;
+}
+.footer_item ul li a img {
+    width: 13px;
+    height: 12px;
 }
 .footer_item ul li + li {
     margin-top: 5px;
