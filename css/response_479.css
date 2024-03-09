@@ -47,6 +47,46 @@
     .indicators_wrap {
         padding: 24px 35px;
     }
+    .first-section_title {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 16px;
+        max-width: 265px;
+    }
+    .first-section_text {
+        line-height: 1.21;
+        font-size: 20px;
+        max-width: 270px;
+    }
+    .first-section_text span:nth-child(1):after {
+        width: 18px;
+        height: 18px;
+        top: 5px;
+        right: -25px;
+    }
+    .first-section_text span {
+        margin-right: 25px;
+    }
+    .first-section_text span:nth-child(2):after {
+        width: 14px;
+        height: 18px;
+        top: 4px;
+        right: -25px;
+    }
+    .first-section_title b:before {
+        width: 169px;
+        height: 35px;
+        left: 0px;
+    }
+    .consult {
+        margin-top: 16px;
+    }
+    .consult_text {
+        font-size: 14px;
+    }
+    .first-section {
+        padding: 24px 0 12px;
+    }
 
 
 

@@ -149,6 +149,23 @@
     .indicators_item:first-child .indicators_item-text {
         margin-top: 48px;
     }
+    .first-section, 
+    .result, 
+    .callback {
+        margin: 0 12px;
+    }
+    .consult {
+        margin-top: 27px;
+        padding: 0 16px 16px;
+    }
+    .consult_text:before {
+        width: calc(100% + 32px);
+        left: -32px;
+    }
+    .quiz_form-title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
 
 
 

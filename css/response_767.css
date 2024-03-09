@@ -13,6 +13,7 @@
     .header_author-name {
         font-size: 16px;
         margin-bottom: 3px;
+        line-height: 1.2;
     }
     .header_author-post {
         font-size: 14px;
@@ -112,7 +113,7 @@
         font-size: 14px;
     }
     .consult_btn a {
-        padding: 13px 5px;
+        padding: 13px 4px;
     }
     .quiz_form .field label {
         padding-left: 28px;
@@ -210,6 +211,60 @@
     .diagrama_list li + li {
         margin-top: 20px;
     }
+    .first-section_title {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .first-section_text {
+        line-height: 1.21;
+        font-size: 24px;
+        max-width: 325px;
+    }
+    .first-section_text span:nth-child(1):after {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: -25px;
+        background-size: cover;
+    }
+    .first-section_text span {
+        margin-right: 25px;
+    }
+    .first-section_text span:nth-child(2):after {
+        width: 18px;
+        height: 24px;
+        top: 4px;
+        right: -25px;
+        background-size: cover;
+    }
+    .first-section_title b:before {
+        width: 169px;
+        height: 35px;
+        left: 0px;
+    }
+    .consult {
+        margin-top: 24px;
+    }
+    .consult_text {
+        font-size: 16px;
+    }
+    .first-section_img img:nth-child(1) {
+        display: none;
+    }
+    .first-section_img {
+        width: 199px;
+        height: 196px;
+    }
+    .first-section_img img:nth-child(2) {
+        display: block;
+    }
+    .quiz_form-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .quiz_form .field {
+        padding: 13px 10px;
+    }
 
 
   
@@ -218,7 +273,7 @@
 
 
 
-@media print, (max-width: 610px) {
+@media print, (max-width: 670px) {
 
     .result_items {
         margin-left: 0px;

@@ -113,6 +113,15 @@
     .request {
         padding: 24px 0;
     }
+    .first-section_img {
+        width: 321px;
+        height: 265px;
+    }
+    .first-section_text {
+        max-width: 445px;
+        font-size: 32px;
+    }
+
    
 
 
