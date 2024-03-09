@@ -113,8 +113,14 @@
         padding: 24px 0px 0px;
     }
     .cont {
-        max-width: 744px;
         padding: 0 12px;
+    }
+    .indicators_item-title {
+        text-align: center;
+    }
+    .indicators_item-text {
+        font-size: 24px;
+        text-align: center;
     }
 
 

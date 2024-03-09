@@ -2267,14 +2267,22 @@ tbody tr:last-child td:nth-child(2) {
     gap: 40px;
     column-count: 2;
 }
-.indicators_item {
-}
 .indicators_item-title {
     font-size: 36px;
     font-weight: 700;
+    margin-bottom: 32px;
 }
-.indicators_item-title span { }
-.indicators_item-info {
+.indicators_item-title span { 
+    font-weight: 400;
 }
 .indicators_item-text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+}
+.indicators_item-text b {
+    font-weight: 500;
+}
+.indicators_item:first-child .indicators_item-text {
+    margin-top: 64px;
 }

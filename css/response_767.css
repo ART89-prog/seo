@@ -156,6 +156,23 @@
     tbody tr td:first-child .table-responsive-stack-thead {
         color: #574D18;
     }
+    .indicators_item-title {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+    .indicators_item-text {
+        font-size: 20px;
+    }
+    .indicators_items {
+        flex-direction: column;
+        gap: 24px;
+    }
+    .indicators_item:first-child .indicators_item-text {
+        margin-top: 0px;
+    }
+    .indicators_wrap {
+        padding: 24px;
+    }
 
 
   

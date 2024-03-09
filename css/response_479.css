@@ -25,6 +25,12 @@
         top: 12px;
         left: 12px
     }
+    .indicators_item-title {
+        font-size: 24px;
+    }
+    .indicators_item-text {
+        font-size: 16px;
+    }
 
 
 
