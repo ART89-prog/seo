@@ -82,11 +82,11 @@
         <path d="M19 19L14.65 14.65M9 6V12M6 9H12M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
 
-      <symbol width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg" id="success">
+      <symbol viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg" id="success">
         <path d="M122 56.5143V62.0343C121.993 74.9728 117.803 87.5624 110.056 97.9253C102.309 108.288 91.4197 115.869 79.0121 119.538C66.6046 123.206 53.3435 122.766 41.2068 118.282C29.0701 113.798 18.7079 105.511 11.6658 94.6567C4.6236 83.8025 1.27875 70.9627 2.13006 58.0522C2.98137 45.1417 7.98324 32.8523 16.3897 23.0168C24.7961 13.1813 36.1567 6.32664 48.7771 3.47522C61.3975 0.623801 74.6016 1.92836 86.42 7.19434M122 14.0343L62 74.0943L44 56.0943" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
       
-      <symbol width="124" height="124" viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg" id="error">
+      <symbol viewBox="0 0 124 124" fill="none" xmlns="http://www.w3.org/2000/svg" id="error">
         <path d="M62 38V62M62 86H62.0595M122 62C122 95.1371 95.1371 122 62 122C28.8629 122 2 95.1371 2 62C2 28.8629 28.8629 2 62 2C95.1371 2 122 28.8629 122 62Z" stroke="#FFD600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
       </symbol>
       

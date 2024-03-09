@@ -278,6 +278,44 @@
         line-height: 1.2;
         margin-bottom: 16px;
     }
+    .quiz_form .line > * {
+        width: 100%;
+    }
+    .quiz_btns {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+    }
+    .quiz_btn {
+        width: 100%;
+    }
+    .quiz form .quiz_phone {
+        width: 100%;
+    }
+    .quiz_wrap-icon {
+        width: 90px;
+        height: 90px;
+        margin: 54px auto 0;
+    }
+    .loader {
+        width: 90px;
+        height: 90px;
+    }
+    .quiz_form-text {
+        font-size: 16px;
+    }
+    .quiz_form-text a span {
+        font-size: 16px;
+    }
+    .quiz_form-text img {
+        width: 24px;
+        height: 24px;
+    }
+    .step_list-title:before {
+        width: 39px;
+        height: 39px;
+    }
+
 
 
   

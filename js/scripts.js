@@ -129,6 +129,14 @@ $(() => {
 
 
 
+	$('.content_toggle').click(function (e) {
+		e.preventDefault();
+		$(this).css("display", "none");	
+		$(this).prev().removeClass('hide');			
+	});				
+
+
+
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false

@@ -173,6 +173,172 @@
     .callback_messages {
         font-size: 16px;
     }
+    .quiz_btn {
+        width: 50%;
+    }
+    .quiz form .quiz_phone {
+        width: 50%;
+    }
+    .stage {
+        display: none;
+    }
+    .step {
+        display: block;
+    }
+    .step_item-icon {
+        margin: 0 auto 16px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding: 25px 20px 0;
+        background: #FAFAFA;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.04);
+        border-radius: 12px;
+        height: 140px;
+    }
+    .step_item:nth-child(1) .step_item-icon img {
+        width: 146px;
+        height: 133px;
+    }
+    .step_item:nth-child(2) .step_item-icon img {
+        width: 158px;
+        height: 124px;
+    }
+    .step_item:nth-child(3) .step_item-icon img {
+        width: 115px;
+        height: 115px;
+    }
+    .step_item:nth-child(4) .step_item-icon img {
+        width: 162px;
+        height: 116px;
+    }
+    .step_item:nth-child(5) .step_item-icon img {
+        width: 131px;
+        height: 128px;
+    }
+    .step_item:nth-child(6) .step_item-icon img {
+        width: 145px;
+        height: 121px;
+    }
+    .step_item:nth-child(7) .step_item-icon img {
+        width: 154px;
+        height: 118px;
+    }
+    .step_item:nth-child(8) .step_item-icon img {
+        width: 147px;
+        height: 124px;
+    }
+    .step_item:nth-child(9) .step_item-icon img {
+        width: 112px;
+        height: 131px;
+    }
+    .step_list-title {
+        font-size: 18px;
+        line-height: 1.5;
+        font-weight: 700;
+        padding-left: 51px;
+        margin-bottom: 12px;
+        position: relative;
+    }
+    .step_list-title:before {
+        counter-increment: tidbit-counter;
+        content: "0" counter(tidbit-counter);
+        color: var(--text_color);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 150%;
+        border-radius: 12px;
+        background: rgb(255, 214, 0);
+        width: 44px;
+        height: 39px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+        position: absolute;
+    }
+    .step_list-text {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    .step_list ul {
+        list-style: none;
+    }
+    .step_list ul li {
+        padding-left: 24px;
+        color: rgb(126, 126, 126);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;  
+        display: block;
+        background: url(../images/arrow.svg) 0 11px no-repeat;
+        background-size: 13px 12px;
+    }
+    .step_items {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: auto;
+        gap: 12px;
+        counter-reset: tidbit-counter;
+    }
+    .step_item {
+        flex: 0 0 296px;
+        padding: 16px;
+        background: #fff;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;        
+    }
+    .step_items::-webkit-scrollbar { 
+        width: 0; 
+    }
+    .step_items { 
+        -ms-overflow-style: none; 
+    }
+    .step_items { 
+        overflow: -moz-scrollbars-none; 
+    }
+    .step_list ul {
+        overflow: hidden;
+        position: relative;    
+    }
+    .step_list ul.hide {
+        height: 300px;
+    }
+    .step_list ul.hide:after{
+        content: "";
+        display: block;
+        height: 150px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fff 75%)
+    }
+    .content_toggle {
+       z-index: 555;
+        position: absolute; 
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 70px;
+    }
+    .content_toggle .icon {
+        width: 14px;
+        height: 9px;
+        stroke: #191916;  
+        transform: rotate(180deg);      
+    }
+    .step_list {
+        position: relative;
+    }
+
 
 
 

@@ -90,6 +90,30 @@
     .callback_title {
         margin-bottom: 4px;
     }
+    .quiz_btn {
+        line-height: 56px;
+        height: 56px;
+    }
+    .step_list-title:before {
+        width: 37px;
+        height: 36px;
+        font-size: 16px;
+    }
+    .step_list-title {
+        font-size: 16px;
+    }
+    .step_list-text {
+        font-size: 14px;
+    }
+    .step_list ul li {
+        font-size: 14px;
+    }
+    .step_item {
+        flex: 0 0 243px;
+        padding: 12px;
+    }
+
+    
 
 
 

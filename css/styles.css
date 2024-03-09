@@ -1574,7 +1574,9 @@ form .field input:-ms-input-placeholder {
     position: relative;
 }
 .quiz form .quiz_phone input {
-    padding: 21px 21px 21px 47px;
+    padding: 0px 21px 0px 47px;
+    height: 65px;
+    line-height: 65px;
     background:#EDEDF0;
     width: 100%;
     font-family: var(--font_family);
@@ -1585,6 +1587,9 @@ form .field input:-ms-input-placeholder {
     border: 1px solid transparent;
     position: relative;
     display: block;
+}
+.quiz form .quiz_phone input.error {
+    border: 1px solid #E96060;
 }
 .quiz form .quiz_phone input:focus {
     border: 1px solid #FFD600;
@@ -1685,6 +1690,9 @@ form .field input:-ms-input-placeholder {
     margin-bottom: 20px;
 }
 
+.step {
+    display: none;
+}
 
 
 
