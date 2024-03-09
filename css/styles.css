@@ -2256,10 +2256,6 @@ tbody tr:last-child td:nth-child(2) {
 
 /* indicators */
 
-.indicators {
-}
-.cont {
-}
 .indicators_wrap {
     background: linear-gradient(360deg, #FFD600 33.74%, rgba(255, 214, 0, 0.21) 98.01%);
     border-radius: 16px;
@@ -2269,11 +2265,15 @@ tbody tr:last-child td:nth-child(2) {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    column-count: 2;
 }
 .indicators_item {
 }
 .indicators_item-title {
+    font-size: 36px;
+    font-weight: 700;
 }
+.indicators_item-title span { }
 .indicators_item-info {
 }
 .indicators_item-text {
