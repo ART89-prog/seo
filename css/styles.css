@@ -959,7 +959,7 @@ header {
     column-gap: 45px;
     row-gap: 34px;
     position: relative;
-    padding: 48px 93px 30px 93px;
+    padding: 48px 93px 30px 75px;
     counter-reset: tidbit-counter;
 }
 .stage_items::before {
@@ -1039,6 +1039,13 @@ header {
 }
 .stage_item.active .stage_item-title {
     color: #7e7e7e;
+}
+.stage_item.active .stage_item-icon {
+    background: none;
+    border: 1px solid #EEEEF0;
+}
+.stage_item.active:before {
+   opacity: 0;
 }
 .stage_list {
     padding: 34px 50px;
@@ -1721,7 +1728,7 @@ form .field input:-ms-input-placeholder {
 .reviews_item-top {
     display: flex;
     align-items: center;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     margin-left: 36px;
 }
 .reviews_item-avatar {
@@ -1766,11 +1773,11 @@ form .field input:-ms-input-placeholder {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6px 8px 8px;
+    border-width: 0 10px 6px 6px;
     border-color: transparent transparent rgb(247, 247, 249) transparent;
     position: absolute;
     content: "";
-    top: -8px;
+    top: -6px;
     left: 52px;
 }
 .reviews_item.hide {
@@ -2020,7 +2027,7 @@ form .field input:-ms-input-placeholder {
 .footer_items {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 30px;
     max-width: 1116px;
     margin: 0 auto;
 }
@@ -2040,21 +2047,20 @@ form .field input:-ms-input-placeholder {
 .footer_item ul {
     list-style: none;
 }
-.footer_item ul li {
+.footer_item ul li a {
     display: flex;
     align-items: center;
-    gap: 12px;
     color: rgb(247, 247, 249);
     font-size: var(--font_size);
     font-weight: 400;
     line-height: 200%;
-}
-.footer_item ul li a {
     text-decoration: none;
 }
 .footer_item ul li a img {
     width: 13px;
     height: 12px;
+    margin-left: -3px;
+    margin-right: 12px;
 }
 .footer_item ul li + li {
     margin-top: 5px;
@@ -2100,7 +2106,7 @@ form .field input:-ms-input-placeholder {
 .footer_item-mail {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
     color: rgb(255, 214, 0);
     font-size: 24px;
     font-weight: 400;
@@ -2151,6 +2157,7 @@ footer .consult_btn {
     line-height: 150%;
     text-align: center;
     max-width: 1116px;
+    margin: 0 auto;
 }
 
 
