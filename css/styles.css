@@ -184,7 +184,7 @@ button {
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 360px;
+    min-width: 320px;
     min-height: 100%;
 
     background: #f7f7f9;
@@ -454,11 +454,12 @@ header {
 .first-section {
     padding: 48px 0 56px;
     border-radius: 16px;
-    margin: 0 50px;    
+    margin: 0 auto;    
     background-repeat: no-repeat;
     background-position: 80% center;
     z-index: 555;
     position: relative;
+    max-width: 1416px;
 }
 .first-section_img {
     width: 668px;
@@ -754,7 +755,8 @@ header {
     padding: 32px 0;
     border-radius: 16px;
     background: var(--text_color);
-    margin: 0 50px;
+    margin: 0 auto;
+    max-width: 1416px;
 }
 .title_white {
     font-size: var(--font_size_title);
@@ -1369,7 +1371,8 @@ form .field input:-ms-input-placeholder {
     padding: 17px 32px 28px;
     background: var(--text_color);
     border-radius: 12px;
-    margin: 0 50px;
+    margin: 0 auto;
+    max-width: 1416px;
 }
 .callback_title {
     display: flex;
@@ -2011,7 +2014,8 @@ form .field input:-ms-input-placeholder {
     padding: 32px 32px;
     border-radius: 12px;
     background: var(--text_color);
-    margin: 32px 32px 0;
+    margin: 32px auto 0;
+    max-width: 1416px;
 }
 .footer_items {
     display: flex;
@@ -2155,12 +2159,13 @@ footer .consult_btn {
 /* promotion */
 
 .promotion {
-    margin: 0 20px;
+    margin: 0 auto;
     padding: 64px 0 210px;
     background: url(../images/promotion_bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 16px;
+    max-width: 1416px;
 }
 .promotion_title {
     padding: 10px 24px;

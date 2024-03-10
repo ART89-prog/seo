@@ -318,7 +318,7 @@ $(() => {
 			if (!fakeResize2) {
 				fakeResize2 = true
 
-				if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+				if (windowW < 320) document.getElementsByTagName('meta')['viewport'].content = 'width=320, user-scalable=no'
 			} else {
 				fakeResize = false
 				fakeResize2 = true
