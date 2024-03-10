@@ -1131,16 +1131,17 @@ header {
     align-items: stretch;
     justify-content: space-between;
 }
-.price_items > * {
+.price_item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: calc(100%/3 - 12px);
+    width: 100%;
     height: 100%;
 }
 .price_item-box {
     background: #fff;
     padding: 0 16px 16px;
+    border-radius: 16px;
 }
 .price_item-box ul {
     list-style: none;
@@ -1357,7 +1358,9 @@ form .field input:-ms-input-placeholder {
     font-size: 18px;
     color: #7e7e7e;
 }
-
+.price .swiper-pagination {
+    display: none;
+}
 
 
 /* callback */
@@ -1999,6 +2002,8 @@ form .field input:-ms-input-placeholder {
     stroke: #FFD600;
     transition: all 0.3s ease;
 }
+
+
 
 
 

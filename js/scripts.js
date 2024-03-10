@@ -192,7 +192,7 @@ $(() => {
 				}
 			},
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.sertificat .swiper-pagination',
 				type: 'bullets',
 				clickable: true,
 			},
@@ -206,6 +206,7 @@ $(() => {
 	})
 
 
+	var menu = ['Старт', 'Стандарт', 'Топовый']
 
 	const priceSliders = [],
 	price = document.querySelectorAll('.price .swiper')
@@ -218,93 +219,51 @@ $(() => {
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (index + 1) + '</span>';
-			  },
-			
+			allowTouchMove: false,
 			slideVisibleClass: 'visible',
-			// pagination: '.pag-shoes',
-			// paginationClickable: true,
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
-					slidesPerView: 1.12
-				},
-				510: {
-					spaceBetween: 12,
-					slidesPerView: 2.1
+					allowTouchMove: true,
+					centeredSlides: true,
+					spaceBetween: 0,
+					slidesPerView: 1,
+					pagination: {
+						el: '.price .swiper-pagination',
+						clickable: true,
+						renderBullet: function(index, className) {
+						  return '\
+							<div class="box ' + className + '">\
+							<div class="bigNumber">' + (index < 10 ? '0' + (index + 1) : (index + 1)) + '</div>\
+							<div class="text">' + (menu[index]) + '</div>\
+							</div>';
+						},
+					  },
 				},
 				768: {
-					spaceBetween: 12,
-					slidesPerView: 2
+					allowTouchMove: true,
+					centeredSlides: true,
+					spaceBetween: 24,
+					slidesPerView: 2.3,
+					pagination: {
+						el: '.price .swiper-pagination',
+						clickable: true,
+						renderBullet: function(index, className) {
+						  return '\
+							<div class="box ' + className + '">\
+							<div class="bigNumber">' + (index < 10 ? '0' + (index + 1) : (index + 1)) + '</div>\
+							<div class="text2">' + (menu[index]) + '</div>\
+							</div>';
+						},
+					  },
 				},
 				1024: {
 					spaceBetween: 24,
-					slidesPerView: 2
-				},
-				1300: {
-					spaceBetween: 24,
-					slidesPerView: 3
+					slidesPerView: 3,
+					allowTouchMove: false,
+					centeredSlides: false,
 				}
 			},
-
-			// pagination: {
-			// 	el: '.swiper-pagination2',
-			// 	clickable: true,
-			// 	type : 'custom',
-			// 	bulletClass:'swiper_pagination_img'
-			//   },
-
-			pagination: {
-				el: '.swiper-pagination2',
-				type: 'bullets',
-				clickable: true,
-				bulletClass: 'swiper-pagination-bullet3',
-				bulletActiveClass: 'swiper-pagination-bullet-active3',
-				renderBullet: function (index, className) {
-				  return '<span class="' + className + '"></span>';
-				},
-				// Set the variable based on the number of bullets
-				on: {
-				  init: function () {
-					document.documentElement.style.setProperty(
-					  '--swiper-pagination-bullet-count3',
-					  this.pagination.bullets.length
-					);
-				  },
-				},
-			  },
 			
-
-
-			// pagination: {
-			// 	el: '.swiper-pagination2',
-			// 	type: 'bullets',
-			// 	clickable: true,
-			// },
-			
-			// paginationType: "custom",
-			// paginationCustomRender: function(swiper, current, total) {
-			//   var names = [];
-			//   $(".swiper-wrapper .swiper-slide").each(function(i) {
-			// 	names.push($(this).data("name"));
-			//   });
-			//   var text = "<span style='background-color:black;padding:20px;'>";
-			//   for (let i = 1; i <= total; i++) {
-			// 	if (current == i) {
-			// 	  text += "<span style='border-top:1px solid green;margin-right:4px;color:green;padding:10px;'>" + names[i] + "</span>";
-			// 	} else {
-			// 	  text += "<span style='border-top:1px solid white;margin-right:4px;color:white;padding:10px;'>" + names[i] + "</span>";
-			// 	}
-		  
-			//   }
-			//   text += "</span>";
-			//   return text;
-			// },
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev'
-			}
 		}
 
 		priceSliders.push(new Swiper('.price_s' + i, options))

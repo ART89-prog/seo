@@ -133,7 +133,10 @@
         display:block;  
         border-bottom: 12px solid #f7f7f9;    
         border-radius: 0 0 12px 12px; 
-    }    
+    }  
+    .table-responsive-stack tr:last-child {
+        border-bottom: none; 
+    }  
     .table-responsive-stack td {
         width: 100%;
     }
@@ -315,6 +318,23 @@
         width: 39px;
         height: 39px;
     }
+    header {
+        padding: 14px 0;
+    }
+    .sertificat .swiper-horizontal>.swiper-pagination-bullets, 
+    .sertificat .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: -25px;
+    }
+    .price .swiper {
+        margin-top: 100px;
+    }
+    .price .swiper-pagination-bullet {
+        font-size: 18px;
+    }
+    .footer_wrap {
+        padding: 24px 0;
+    }
+
 
 
 

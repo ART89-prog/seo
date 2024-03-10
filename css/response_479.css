@@ -112,6 +112,18 @@
         flex: 0 0 243px;
         padding: 12px;
     }
+    .price .swiper-pagination-bullet {
+        font-size: 16px;
+    }
+    .price .swiper {
+        margin-top: 80px;
+    }
+    .footer_bottom {
+        padding: 16px 0px 0px;
+    }
+    .footer_wrap {
+        padding: 16px 0;
+    }
 
     
 
