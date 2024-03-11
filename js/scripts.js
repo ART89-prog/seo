@@ -171,8 +171,8 @@ $(() => {
 			slideVisibleClass: 'visible',
 			breakpoints: {
 				0: {
-					spaceBetween: 12,
-					slidesPerView: 1.12
+					spaceBetween: 20,
+					slidesPerView: 1.2
 				},
 				510: {
 					spaceBetween: 12,

@@ -281,9 +281,6 @@
         line-height: 1.2;
         margin-bottom: 16px;
     }
-    .quiz_form .line > * {
-        width: 100%;
-    }
     .quiz_btns {
         flex-direction: column;
         gap: 12px;
@@ -328,11 +325,16 @@
     .price .swiper {
         margin-top: 100px;
     }
-    .price .swiper-pagination-bullet {
+    .price .swiper-pagination-bullet,
+    .price .swiper-pagination-bullet-active {
         font-size: 18px;
     }
     .footer_wrap {
         padding: 24px 0;
+    }
+    .price .swiper-horizontal>.swiper-pagination-bullets, 
+    .price .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: 80px;
     }
 
 
