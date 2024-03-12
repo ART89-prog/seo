@@ -1,52 +1,61 @@
-@media print, (max-width: 1300px) {
-
-    :root {
+@media print, (max-width: 1300px)
+{
+    :root
+    {
         --font_size_title: 48px;
         --font_size: 18px;
     }
-    .swiper-button-prev {
+    .swiper-button-prev
+    {
         display: none;
     }
-    .swiper-button-next {
+    .swiper-button-next
+    {
         display: none;
     }
 
-    .header_left {
+    .header_left
+    {
         max-width: 528px ;
     }
-    .cont {
+    .cont
+    {
         max-width: 1156px;
     }
-    .header_phone {
+    .header_phone
+    {
         font-size: 24px;
     }
-    .first-section {
+    .first-section
+    {
         background-position: 130% center;
     }
-    .consult {
+    .consult
+    {
         max-width: 545px;
     }
-    .consult_text {
-        text-align:  start;
+    .consult_text
+    {
         max-width: 335px;
         margin: 0 auto 22px;
+
+        text-align: start;
     }
-    .callback_wrap {
+    .callback_wrap
+    {
         padding: 0;
     }
-    .callback {
+    .callback
+    {
         padding: 17px 0 28px;
     }
-    .about_img {
+    .about_img
+    {
         width: 546px;
         height: 509px;
     }
-    .indicators_wrap {
+    .indicators_wrap
+    {
         padding: 32px 60px;
     }
-
-
-
-
 }
-

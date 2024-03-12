@@ -1,134 +1,286 @@
-@media (max-width: 479px) {
-
-    :root {
+@media (max-width: 479px)
+{
+    :root
+    {
         --font_size_title: 24px;
         --font_size: 16px;
     }
-    .header_phone {
+    .header_phone
+    {
         font-size: 16px;
         line-height: 1.5;
     }
-    .header_time {
+    .header_time
+    {
         font-size: 14px;
     }
-    .result_item-title {
+    .result_item-title
+    {
         font-size: 18px;
     }
-    .result_item-adress {
+    .result_item-adress
+    {
         font-size: 14px;
     }
-    .result_item-bottom {
+    .result_item-bottom
+    {
         bottom: 12px;
         left: 12px;
     }
-    .result_item-top {
+    .result_item-top
+    {
         top: 12px;
-        left: 12px
+        left: 12px;
     }
-    .indicators_item-title {
+    .indicators_item-title
+    {
         font-size: 24px;
     }
-    .indicators_item-text {
+    .indicators_item-text
+    {
         font-size: 16px;
     }
-    .promotion_title {
+    .promotion_title
+    {
         font-size: 30px;
     }
-    .promotion .cont {
+    .promotion .cont
+    {
         padding: 0 15px;
     }
-    .text {
+    .text
+    {
         font-size: 18px;
+
         margin-bottom: 18px;
     }
-    .diagrama_list {
+    .diagrama_list
+    {
         margin: 0;
     }
-    .indicators_wrap {
+    .indicators_wrap
+    {
         padding: 24px 35px;
     }
-    .first-section_title {
+    .first-section_title
+    {
         font-size: 30px;
         line-height: 36px;
-        margin-bottom: 16px;
+
         max-width: 265px;
+        margin-bottom: 16px;
     }
-    .first-section_text {
-        line-height: 1.21;
+    .first-section_text
+    {
         font-size: 20px;
+        line-height: 1.21;
+
         max-width: 270px;
     }
-    .first-section_text span:nth-child(1):after {
-        width: 18px;
-        height: 18px;
+    .first-section_text span:nth-child(1):after
+    {
         top: 5px;
         right: -25px;
+
+        width: 18px;
+        height: 18px;
     }
-    .first-section_text span {
+    .first-section_text span
+    {
         margin-right: 25px;
     }
-    .first-section_text span:nth-child(2):after {
-        width: 14px;
-        height: 18px;
+    .first-section_text span:nth-child(2):after
+    {
         top: 4px;
         right: -25px;
+
+        width: 14px;
+        height: 18px;
     }
-    .first-section_title b:before {
+    .first-section_title b:before
+    {
+        left: 0;
+
         width: 169px;
         height: 35px;
-        left: 0px;
     }
-    .consult {
+    .consult
+    {
         margin-top: 16px;
     }
-    .consult_text {
+    .consult_text
+    {
         font-size: 14px;
     }
-    .first-section {
+    .first-section
+    {
         padding: 24px 0 12px;
     }
-    .callback_title {
+    .callback_title
+    {
         margin-bottom: 4px;
     }
-    .quiz_btn {
+    .quiz_btn
+    {
         line-height: 56px;
+
         height: 56px;
     }
-    .step_list-title:before {
+    .step_list-title:before
+    {
+        font-size: 16px;
+
         width: 37px;
         height: 36px;
+    }
+    .step_list-title
+    {
         font-size: 16px;
     }
-    .step_list-title {
-        font-size: 16px;
-    }
-    .step_list-text {
+    .step_list-text
+    {
         font-size: 14px;
     }
-    .step_list ul li {
+    .step_list ul li
+    {
         font-size: 14px;
     }
-    .step_item {
-        flex: 0 0 243px;
+    .step_item
+    {
         padding: 12px;
+
+        flex: 0 0 243px;
     }
-    .price .swiper-pagination-bullet {
+    .price .swiper-pagination-bullet
+    {
         font-size: 16px;
     }
-    .price .swiper {
+    .price .swiper
+    {
         margin-top: 80px;
     }
-    .footer_bottom {
-        padding: 16px 0px 0px;
+    .footer_bottom
+    {
+        padding: 16px 0 0;
     }
-    .footer_wrap {
+    .footer_wrap
+    {
         padding: 16px 0;
     }
+    .quiz_form .line > *{
+        width: 100%;
+    }
 
-    
+    .consult_title{
+        font-size: 20px;
+    }
 
+    .consult_text span {
+        font-size: 35px;
+    }
 
+    .about_list li br{
+        display: none;
+    }
 
+    .price .swiper-pagination-bullet-active:before{
+        bottom: -15px;
+    }
+    .quiz_title strong:before {
+        top: 19px;
+    }
 
+    .quiz_title.title b span:before{
+        left: -11px;
+    }
 
+    .reviews_title b{
+        display: block;
+    }
+
+    .about_title attr{
+        display: block;
+    }
+
+    .about_title.title b span:before{
+        width: 133px;
+        height: 35px;
+        left: -6px;
+    }
+
+}
+
+@media (max-width: 417px){
+     .price .swiper-pagination-bullet-active:before{
+        bottom: -14px;
+    }
+}
+
+@media (max-width: 350px)
+{
+    .header_author{
+        gap:6px;
+    }
+    .header_phone{
+        font-size: 14px;
+    }
+    .footer_item ul li b {
+        font-size: 15px;
+    }
+
+    .consult_btn a{
+        font-size: 16px;
+    }
+    .first-section_img {
+        width: 123px;
+        height: auto;
+    }
+    .consult_btn a .icon1{
+        width: 16px;
+        height: 16px;
+    }
+
+    .consult_btn a .icon2{
+        width: 16px;
+    }
+    .advantages_item-title{
+        font-size: 16px;
+    }
+    .advantages_item-icon{
+        width: 56px;
+        height: 56px;
+    }
+    .advantages_items > *{
+        gap:12px;
+        padding:16px 12px;
+    }
+
+    .advantages_item-title br{
+        display: none;
+    }
+
+    .result_title br{
+        display: none;
+    }
+
+    .result_item-label{
+        font-size: 14px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+
+    .price .swiper .swiper-pagination-bullet:nth-child(2):after{
+        right:-9px;
+    }
+
+    .callback_avatar{
+        width: 68px;
+        height: 68px;
+    }
+
+    .callback_messages{
+        font-size: 14px;
+    }
 }

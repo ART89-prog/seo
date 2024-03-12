@@ -1,6 +1,4 @@
 $(() => {
-
-
 	// Ширина окна для ресайза
 	WW = window.innerWidth || document.clientWidth || document.getElementsByTagName('body')[0].clientWidth
 	WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
@@ -8,6 +6,82 @@ $(() => {
 	OVERLAY = document.querySelector('.overlay')
 
 
+
+	
+
+
+	var currentStep = 1
+	
+	$('.step0:not(.step5)').change(function (e) {
+		e.preventDefault()
+
+		currentStep++
+
+		$('.step0').hide()
+		$('.step' + currentStep).fadeIn(500)
+
+		$('.progress-bar-text span').text(currentStep)
+		$('.progress-bar-fill').width(currentStep / 5 * 100 + '%')
+
+		if (currentStep == 5) {
+			
+		}
+
+		//$('.calc .manager .text').html($('.calc .step' + currentStep).data("text"))
+		//$('.calc .manager .text').hide()
+		//$('.calc .manager .text' + currentStep).fadeIn(300)
+	})
+
+	$('body').on('click', '.quiz_btn', function (e) {
+		//Валидация и отправка письма	
+		e.preventDefault();	
+		var but = $(this);
+        var formID = $(this).closest("form").prop('id');       
+        var formNm = document.getElementById(formID);
+        var phone = $(this).closest("form").find("input[name='phone']");
+
+        if (!$(phone).inputmask("isComplete"))
+        {
+            $(phone).addClass('error_field');
+            return false;
+        }
+        else{        	
+        	
+        	$.ajax({
+	            type: "POST",
+	            url: 'send.php',
+	            data: new FormData(formNm),
+	            processData: false,
+	            contentType: false,
+	            beforeSend: function() {
+	                $(but).closest("form").find(".loader").show();
+		        	$(".step5 .quiz_form-title.fix_title").text("Подождите ...");
+		        	$(".step_finish .line").hide();
+		        	$(".step_finish .quiz_btns").hide();
+	            },
+	            success: function(data) {
+	                setTimeout(() => {
+						$(but).closest("form").find(".loader").hide()
+						$(".step_finish").hide();
+						$(".success2").show();				
+						$('form').trigger("reset");
+					}, 1000);
+	                
+	            },
+	            error: function(jqXHR, text, error) {
+	               setTimeout(() => {
+						$(but).closest("form").find(".loader").hide()
+						$(".step_finish").hide();
+						$(".error2").show();				
+						$('form').trigger("reset");
+					}, 1000);
+	            }
+	        });	
+        }	
+	});
+
+
+	setHeight($(".price_item-info"));
 
 	$('body').on('click', '.modal_link', function (e) {
 		e.preventDefault()
@@ -55,27 +129,75 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
 	}
 
-
 	// Показать контент 
-	$(".link-more").click(function (e) {
+	$(".link-more-review").click(function (e) {
 		e.preventDefault();
 		$(".reviews_item").removeClass("hide");
-		$(".link-more").addClass("active");
+		$(".link-more-review").addClass("active");
 	});
 
-	$(".link-more").click(function (e) {
+	$(".link-more-result").click(function (e) {
 		e.preventDefault();
 		$(".result_item").removeClass("hide");
-		$(".link-more").addClass("active");
+		$(".link-more-result").addClass("active");
 	});
 
-
-
-	$('.price_item-btn').click(function (e) {
+	$('body').on('click', '.price_item-btn', function (e) {
 		e.preventDefault();
+		$(this).addClass("active");
 		$(this).prev().prev().css("display", "none");
 		$(this).prev().css("display", "block");
 	});
+
+	$(document).on('keypress', '.error_field', function() {
+        $(this).removeClass('error_field');
+    })
+
+
+	$('body').on('click', '.price_item-btn.active', function (e) {
+		
+		//Валидация и отправка письма	
+		var but = $(this);	
+        var formID = $(this).prev().prop('id');       
+        var formNm = document.getElementById(formID);
+        var phone = $(this).prev().find("input");
+
+        if (!$(phone).inputmask("isComplete"))
+        {
+            $(phone).addClass('error_field');
+            return false;
+        }
+        else{
+        	$.ajax({
+	            type: "POST",
+	            url: 'send.php',
+	            data: new FormData(formNm),
+	            processData: false,
+	            contentType: false,
+	            beforeSend: function() {
+	                $(but).parent().parent().find(".load").show();
+	            },
+	            success: function(data) {
+	                setTimeout(() => {
+						$(but).parent().parent().find(".load").hide()
+						$(but).parent().parent().find(".success").show()
+						$('form').trigger("reset");
+					}, 1000);	
+	                
+	            },
+	            error: function(jqXHR, text, error) {
+	               setTimeout(() => {
+						$(but).parent().parent().find(".load").hide()
+						$(but).parent().parent().find(".error").show()
+						$('form').trigger("reset");
+					}, 1000);	
+	            }
+	        });	
+        }		
+		
+	});
+
+
 
 	if ($(window).width() < 768) {
 		$('.footer_item-title-js').click(function (e) {
@@ -85,8 +207,6 @@ $(() => {
 		});
 	}
 
-
-
 	let header = $('header');
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 1) {
@@ -95,8 +215,6 @@ $(() => {
 			header.removeClass('header_fixed');
 		}
 	});
-
-
 
 	$(document).ready(function () {
 		$('.table-responsive-stack').find("th").each(function (i) {
@@ -128,15 +246,11 @@ $(() => {
 	});
 
 
-
 	$('.content_toggle').click(function (e) {
 		e.preventDefault();
 		$(this).css("display", "none");
 		$(this).prev().removeClass('hide');
 	});
-
-
-
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
@@ -156,7 +270,6 @@ $(() => {
 		// main: null
 	}
 
-
 	const sertificatSliders = [],
 		sertificat = document.querySelectorAll('.sertificat .swiper')
 
@@ -172,7 +285,7 @@ $(() => {
 			breakpoints: {
 				0: {
 					spaceBetween: 20,
-					slidesPerView: 1.2
+					slidesPerView: 1.4
 				},
 				510: {
 					spaceBetween: 12,
@@ -180,11 +293,11 @@ $(() => {
 				},
 				768: {
 					spaceBetween: 12,
-					slidesPerView: 2
+					slidesPerView: 3
 				},
 				1024: {
 					spaceBetween: 24,
-					slidesPerView: 3
+					slidesPerView: 4
 				},
 				1300: {
 					spaceBetween: 24,
@@ -215,7 +328,7 @@ $(() => {
 		el.classList.add('price_s' + i)
 
 		let options = {
-			loop: true,
+			loop: false,
 			speed: 500,
 			watchSlidesProgress: true,
 			slideActiveClass: 'active',
@@ -225,6 +338,7 @@ $(() => {
 				0: {
 					allowTouchMove: true,
 					centeredSlides: true,
+					initialSlide: 1,
 					spaceBetween: 0,
 					slidesPerView: 1,
 					pagination: {
@@ -243,6 +357,7 @@ $(() => {
 					allowTouchMove: true,
 					centeredSlides: true,
 					spaceBetween: 24,
+					initialSlide: 1,
 					slidesPerView: 2.3,
 					pagination: {
 						el: '.price .swiper-pagination',
@@ -269,12 +384,7 @@ $(() => {
 		priceSliders.push(new Swiper('.price_s' + i, options))
 	})
 
-
-
-
-
 	$('input[type=tel]').inputmask('+7 (999) 999-99-99')
-
 
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
@@ -292,8 +402,6 @@ $(() => {
 			$item.addClass('active').find('.data').slideDown(400)
 		}
 	})
-
-
 
 	window.addEventListener('resize', function () {
 		WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
@@ -325,7 +433,5 @@ $(() => {
 			}
 		}
 	})
-
-
 
 })

@@ -1,22 +1,24 @@
-@media print, (max-width: 1700px) {
-
+@media print, (max-width: 1700px)
+{
     .first-section,
     .result,
-    .callback {
+    .callback
+    {
         margin: 0 20px;
     }
-    .swiper-button-prev {
-        left: 0px;
+     .first-section{
+        margin-top: 111px;
+     }
+    .swiper-button-prev
+    {
+        left: 0;
     }
-    .swiper-button-next {
-        right: 0px;
+    .swiper-button-next
+    {
+        right: 0;
     }
-    .stage_items {
+    .stage_items
+    {
         padding: 48px 51px 30px 51px;
     }
-    
-
-
-
 }
-
